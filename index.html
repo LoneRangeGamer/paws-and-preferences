@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Paws & Preferences</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container" role="main">
+        <header>
+            <h1>Paws & Preferences</h1>
+            <p>Swipe Right to Like, Left to Pass!</p>
+        </header>
+
+        <div id="card-container" class="card-stack"></div>
+
+        <div class="actions">
+            <button id="btn-dislike" class="btn btn-dislike" type="button" aria-label="Dislike"><i class="fas fa-times" aria-hidden="true"></i></button>
+            <button id="btn-like" class="btn btn-like" type="button" aria-label="Like"><i class="fas fa-heart" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <div id="summary" class="hidden summary-screen" aria-hidden="true">
+        <h2>Purr-fect Matches!</h2>
+        <p>You liked <span id="like-count">0</span> cats.</p>
+        <div id="liked-cats" class="liked-grid"></div>
+        <button onclick="location.reload()" class="btn-restart">Start Over</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
